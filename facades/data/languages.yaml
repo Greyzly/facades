@@ -1,0 +1,552 @@
+'Abkhazian': 
+  ISO_639_1: ab
+  ISO_639_2: abk
+'Afar': 
+  ISO_639_1: aa
+  ISO_639_2: aar
+'Afrikaans': 
+  ISO_639_1: af
+  ISO_639_2: afr
+'Akan': 
+  ISO_639_1: ak
+  ISO_639_2: aka
+'Albanian': 
+  ISO_639_1: sq
+  ISO_639_2: sqi
+'Amharic': 
+  ISO_639_1: am
+  ISO_639_2: amh
+'Arabic': 
+  ISO_639_1: ar
+  ISO_639_2: ara
+'Aragonese': 
+  ISO_639_1: an
+  ISO_639_2: arg
+'Armenian': 
+  ISO_639_1: hy
+  ISO_639_2: hye
+'Assamese': 
+  ISO_639_1: as
+  ISO_639_2: asm
+'Avaric': 
+  ISO_639_1: av
+  ISO_639_2: ava
+'Avestan': 
+  ISO_639_1: ae
+  ISO_639_2: ave
+'Aymara': 
+  ISO_639_1: ay
+  ISO_639_2: aym
+'Azerbaijani': 
+  ISO_639_1: az
+  ISO_639_2: aze
+'Bambara': 
+  ISO_639_1: bm
+  ISO_639_2: bam
+'Bashkir': 
+  ISO_639_1: ba
+  ISO_639_2: bak
+'Basque': 
+  ISO_639_1: eu
+  ISO_639_2: eus
+'Belarusian': 
+  ISO_639_1: be
+  ISO_639_2: bel
+'Bengali': 
+  ISO_639_1: bn
+  ISO_639_2: ben
+'Bislama': 
+  ISO_639_1: bi
+  ISO_639_2: bis
+'Bosnian': 
+  ISO_639_1: bs
+  ISO_639_2: bos
+'Breton': 
+  ISO_639_1: br
+  ISO_639_2: bre
+'Bulgarian': 
+  ISO_639_1: bg
+  ISO_639_2: bul
+'Burmese': 
+  ISO_639_1: my
+  ISO_639_2: mya
+'Catalan, Valencian': 
+  ISO_639_1: ca
+  ISO_639_2: cat
+'Chamorro': 
+  ISO_639_1: ch
+  ISO_639_2: cha
+'Chechen': 
+  ISO_639_1: ce
+  ISO_639_2: che
+'Chichewa, Chewa, Nyanja': 
+  ISO_639_1: ny
+  ISO_639_2: nya
+'Chinese': 
+  ISO_639_1: zh
+  ISO_639_2: zho
+'Church Slavonic, Old Slavonic, Old Church Slavonic': 
+  ISO_639_1: cu
+  ISO_639_2: chu
+'Chuvash': 
+  ISO_639_1: cv
+  ISO_639_2: chv
+'Cornish': 
+  ISO_639_1: kw
+  ISO_639_2: cor
+'Corsican': 
+  ISO_639_1: co
+  ISO_639_2: cos
+'Cree': 
+  ISO_639_1: cr
+  ISO_639_2: cre
+'Croatian': 
+  ISO_639_1: hr
+  ISO_639_2: hrv
+'Czech': 
+  ISO_639_1: cs
+  ISO_639_2: ces
+'Danish': 
+  ISO_639_1: da
+  ISO_639_2: dan
+'Divehi, Dhivehi, Maldivian': 
+  ISO_639_1: dv
+  ISO_639_2: div
+'Dutch, Flemish': 
+  ISO_639_1: nl
+  ISO_639_2: nld
+'Dzongkha': 
+  ISO_639_1: dz
+  ISO_639_2: dzo
+'English': 
+  ISO_639_1: en
+  ISO_639_2: eng
+'Esperanto': 
+  ISO_639_1: eo
+  ISO_639_2: epo
+'Estonian': 
+  ISO_639_1: et
+  ISO_639_2: est
+'Ewe': 
+  ISO_639_1: ee
+  ISO_639_2: ewe
+'Faroese': 
+  ISO_639_1: fo
+  ISO_639_2: fao
+'Fijian': 
+  ISO_639_1: fj
+  ISO_639_2: fij
+'Finnish': 
+  ISO_639_1: fi
+  ISO_639_2: fin
+'French': 
+  ISO_639_1: fr
+  ISO_639_2: fra
+'Western Frisian, Fries': 
+  ISO_639_1: fy
+  ISO_639_2: fry
+'Fulah': 
+  ISO_639_1: ff
+  ISO_639_2: ful
+'Gaelic, Scottish Gaelic': 
+  ISO_639_1: gd
+  ISO_639_2: gla
+'Galician': 
+  ISO_639_1: gl
+  ISO_639_2: glg
+'Ganda': 
+  ISO_639_1: lg
+  ISO_639_2: lug
+'Georgian': 
+  ISO_639_1: ka
+  ISO_639_2: kat
+'German': 
+  ISO_639_1: de
+  ISO_639_2: deu
+'Greek': 
+  ISO_639_1: el
+  ISO_639_2: ell
+'Kalaallisut, Greenlandic': 
+  ISO_639_1: kl
+  ISO_639_2: kal
+'Guarani': 
+  ISO_639_1: gn
+  ISO_639_2: grn
+'Gujarati': 
+  ISO_639_1: gu
+  ISO_639_2: guj
+'Haitian, Haitian Creole': 
+  ISO_639_1: ht
+  ISO_639_2: hat
+'Hausa': 
+  ISO_639_1: ha
+  ISO_639_2: hau
+'Hebrew': 
+  ISO_639_1: he
+  ISO_639_2: heb
+'Herero': 
+  ISO_639_1: hz
+  ISO_639_2: her
+'Hindi': 
+  ISO_639_1: hi
+  ISO_639_2: hin
+'Hiri Motu': 
+  ISO_639_1: ho
+  ISO_639_2: hmo
+'Hungarian': 
+  ISO_639_1: hu
+  ISO_639_2: hun
+'Icelandic': 
+  ISO_639_1: is
+  ISO_639_2: isl
+'Ido': 
+  ISO_639_1: io
+  ISO_639_2: ido
+'Igbo': 
+  ISO_639_1: ig
+  ISO_639_2: ibo
+'Indonesian': 
+  ISO_639_1: id
+  ISO_639_2: ind
+'Interlingua (International Auxiliary Language Association)': 
+  ISO_639_1: ia
+  ISO_639_2: ina
+'Interlingue, Occidental': 
+  ISO_639_1: ie
+  ISO_639_2: ile
+'Inuktitut': 
+  ISO_639_1: iu
+  ISO_639_2: iku
+'Inupiaq': 
+  ISO_639_1: ik
+  ISO_639_2: ipk
+'Irish': 
+  ISO_639_1: ga
+  ISO_639_2: gle
+'Italian': 
+  ISO_639_1: it
+  ISO_639_2: ita
+'Japanese': 
+  ISO_639_1: ja
+  ISO_639_2: jpn
+'Javanese': 
+  ISO_639_1: jv
+  ISO_639_2: jav
+'Kannada': 
+  ISO_639_1: kn
+  ISO_639_2: kan
+'Kanuri': 
+  ISO_639_1: kr
+  ISO_639_2: kau
+'Kashmiri': 
+  ISO_639_1: ks
+  ISO_639_2: kas
+'Kazakh': 
+  ISO_639_1: kk
+  ISO_639_2: kaz
+'Central Khmer': 
+  ISO_639_1: km
+  ISO_639_2: khm
+'Kikuyu, Gikuyu': 
+  ISO_639_1: ki
+  ISO_639_2: kik
+'Kinyarwanda': 
+  ISO_639_1: rw
+  ISO_639_2: kin
+'Kyrgyz, Kirghiz': 
+  ISO_639_1: ky
+  ISO_639_2: kir
+'Komi': 
+  ISO_639_1: kv
+  ISO_639_2: kom
+'Kongo': 
+  ISO_639_1: kg
+  ISO_639_2: kon
+'Korean': 
+  ISO_639_1: ko
+  ISO_639_2: kor
+'Kuanyama, Kwanyama': 
+  ISO_639_1: kj
+  ISO_639_2: kua
+'Kurdish': 
+  ISO_639_1: ku
+  ISO_639_2: kur
+'Lao': 
+  ISO_639_1: lo
+  ISO_639_2: lao
+'Latin': 
+  ISO_639_1: la
+  ISO_639_2: lat
+'Latvian': 
+  ISO_639_1: lv
+  ISO_639_2: lav
+'Limburgan, Limburger, Limburgish': 
+  ISO_639_1: li
+  ISO_639_2: lim
+'Lingala': 
+  ISO_639_1: ln
+  ISO_639_2: lin
+'Lithuanian': 
+  ISO_639_1: lt
+  ISO_639_2: lit
+'Luba-Katanga': 
+  ISO_639_1: lu
+  ISO_639_2: lub
+'Luxembourgish, Letzeburgesch': 
+  ISO_639_1: lb
+  ISO_639_2: ltz
+'Macedonian': 
+  ISO_639_1: mk
+  ISO_639_2: mkd
+'Malagasy': 
+  ISO_639_1: mg
+  ISO_639_2: mlg
+'Malay': 
+  ISO_639_1: ms
+  ISO_639_2: msa
+'Malayalam': 
+  ISO_639_1: ml
+  ISO_639_2: mal
+'Maltese': 
+  ISO_639_1: mt
+  ISO_639_2: mlt
+'Manx': 
+  ISO_639_1: gv
+  ISO_639_2: glv
+'Maori': 
+  ISO_639_1: mi
+  ISO_639_2: mri
+'Marathi': 
+  ISO_639_1: mr
+  ISO_639_2: mar
+'Marshallese': 
+  ISO_639_1: mh
+  ISO_639_2: mah
+'Mongolian': 
+  ISO_639_1: mn
+  ISO_639_2: mon
+'ᠬᠡᠯᠡ; Монгол хэл (Mongol xel)': 
+  ISO_639_1: Mongol
+  ISO_639_2: 
+'Nauru': 
+  ISO_639_1: na
+  ISO_639_2: nau
+'Navajo, Navaho': 
+  ISO_639_1: nv
+  ISO_639_2: nav
+'North Ndebele': 
+  ISO_639_1: nd
+  ISO_639_2: nde
+'South Ndebele': 
+  ISO_639_1: nr
+  ISO_639_2: nbl
+'Ndonga': 
+  ISO_639_1: ng
+  ISO_639_2: ndo
+'Nepali': 
+  ISO_639_1: ne
+  ISO_639_2: nep
+'Norwegian': 
+  ISO_639_1: no
+  ISO_639_2: nor
+'Norwegian Bokmål': 
+  ISO_639_1: nb
+  ISO_639_2: nob
+'Norwegian Nynorsk': 
+  ISO_639_1: nn
+  ISO_639_2: nno
+'Occitan': 
+  ISO_639_1: oc
+  ISO_639_2: oci
+'Ojibwa': 
+  ISO_639_1: oj
+  ISO_639_2: oji
+'Oriya': 
+  ISO_639_1: or
+  ISO_639_2: ori
+'Oromo': 
+  ISO_639_1: om
+  ISO_639_2: orm
+'Ossetian, Ossetic': 
+  ISO_639_1: os
+  ISO_639_2: oss
+'Pali': 
+  ISO_639_1: pi
+  ISO_639_2: pli
+'Pashto, Pushto': 
+  ISO_639_1: ps
+  ISO_639_2: pus
+'Persian': 
+  ISO_639_1: fa
+  ISO_639_2: fas
+'Polish': 
+  ISO_639_1: pl
+  ISO_639_2: pol
+'Portuguese': 
+  ISO_639_1: pt
+  ISO_639_2: por
+'Punjabi, Panjabi': 
+  ISO_639_1: pa
+  ISO_639_2: pan
+'Quechua': 
+  ISO_639_1: qu
+  ISO_639_2: que
+'Romanian, Moldavian, Moldovan': 
+  ISO_639_1: ro
+  ISO_639_2: ron
+'Romansh': 
+  ISO_639_1: rm
+  ISO_639_2: roh
+'Rundi': 
+  ISO_639_1: rn
+  ISO_639_2: run
+'Russian': 
+  ISO_639_1: ru
+  ISO_639_2: rus
+'Northern Sami': 
+  ISO_639_1: se
+  ISO_639_2: sme
+'Samoan': 
+  ISO_639_1: sm
+  ISO_639_2: smo
+'Sango': 
+  ISO_639_1: sg
+  ISO_639_2: sag
+'Sanskrit': 
+  ISO_639_1: sa
+  ISO_639_2: san
+'Sardinian': 
+  ISO_639_1: sc
+  ISO_639_2: srd
+'Serbian': 
+  ISO_639_1: sr
+  ISO_639_2: srp
+'Shona': 
+  ISO_639_1: sn
+  ISO_639_2: sna
+'Sindhi': 
+  ISO_639_1: sd
+  ISO_639_2: snd
+'Sinhala, Sinhalese': 
+  ISO_639_1: si
+  ISO_639_2: sin
+'Slovak': 
+  ISO_639_1: sk
+  ISO_639_2: slk
+'Slovenian': 
+  ISO_639_1: sl
+  ISO_639_2: slv
+'Somali': 
+  ISO_639_1: so
+  ISO_639_2: som
+'Southern Sotho': 
+  ISO_639_1: st
+  ISO_639_2: sot
+'Spanish, Castilian': 
+  ISO_639_1: es
+  ISO_639_2: spa
+'Sundanese': 
+  ISO_639_1: su
+  ISO_639_2: sun
+'Swahili': 
+  ISO_639_1: sw
+  ISO_639_2: swa
+'Swati': 
+  ISO_639_1: ss
+  ISO_639_2: ssw
+'Swedish': 
+  ISO_639_1: sv
+  ISO_639_2: swe
+'Tagalog': 
+  ISO_639_1: tl
+  ISO_639_2: tgl
+'Tahitian': 
+  ISO_639_1: ty
+  ISO_639_2: tah
+'Tajik': 
+  ISO_639_1: tg
+  ISO_639_2: tgk
+'Tamil': 
+  ISO_639_1: ta
+  ISO_639_2: tam
+'Tatar': 
+  ISO_639_1: tt
+  ISO_639_2: tat
+'Telugu': 
+  ISO_639_1: te
+  ISO_639_2: tel
+'Thai': 
+  ISO_639_1: th
+  ISO_639_2: tha
+'Tibetan': 
+  ISO_639_1: bo
+  ISO_639_2: bod
+'Tigrinya': 
+  ISO_639_1: ti
+  ISO_639_2: tir
+'Tonga (Tonga Islands)': 
+  ISO_639_1: to
+  ISO_639_2: ton
+'Tsonga': 
+  ISO_639_1: ts
+  ISO_639_2: tso
+'Tswana': 
+  ISO_639_1: tn
+  ISO_639_2: tsn
+'Turkish': 
+  ISO_639_1: tr
+  ISO_639_2: tur
+'Turkmen': 
+  ISO_639_1: tk
+  ISO_639_2: tuk
+'Twi': 
+  ISO_639_1: tw
+  ISO_639_2: twi
+'Uighur, Uyghur': 
+  ISO_639_1: ug
+  ISO_639_2: uig
+'Ukrainian': 
+  ISO_639_1: uk
+  ISO_639_2: ukr
+'Urdu': 
+  ISO_639_1: ur
+  ISO_639_2: urd
+'Uzbek': 
+  ISO_639_1: uz
+  ISO_639_2: uzb
+'Venda': 
+  ISO_639_1: ve
+  ISO_639_2: ven
+'Vietnamese': 
+  ISO_639_1: vi
+  ISO_639_2: vie
+'Volapük': 
+  ISO_639_1: vo
+  ISO_639_2: vol
+'Walloon': 
+  ISO_639_1: wa
+  ISO_639_2: wln
+'Welsh': 
+  ISO_639_1: cy
+  ISO_639_2: cym
+'Wolof': 
+  ISO_639_1: wo
+  ISO_639_2: wol
+'Xhosa': 
+  ISO_639_1: xh
+  ISO_639_2: xho
+'Sichuan Yi, Nuosu': 
+  ISO_639_1: ii
+  ISO_639_2: iii
+'Yiddish': 
+  ISO_639_1: yi
+  ISO_639_2: yid
+'Yoruba': 
+  ISO_639_1: yo
+  ISO_639_2: yor
+'Zhuang, Chuang': 
+  ISO_639_1: za
+  ISO_639_2: zha
+'Zulu': 
+  ISO_639_1: zu
+  ISO_639_2: zul

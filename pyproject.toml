@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "facades"
+version = "0.1.0"
+description = "A collection of my personal utility functions"
+authors = [{ name = "Greyzly" }]
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    # Add third-party packages here if your scripts require them later
+    # e.g., "requests>=2.25.1", "pandas"
+    "requests", "pyyaml"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["facades*"] # Make sure this matches your folder name
