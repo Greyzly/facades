@@ -2,23 +2,19 @@ import os
 import logging
 import sys
 import yaml
-import inspect
 
-app_location = os.path.dirname(os.path.abspath(__file__))
+app_location_for_commons = os.path.dirname(os.path.abspath(sys.argv[0]))
 
 def file_path_resolver(file_path: str, is_parent: bool = False, sub_folder: str = None):
     if type(file_path).__name__ == 'StringIO':
         file_path.seek(0)
     else:
-        caller_frame = inspect.stack()[1]
-        caller_filename = caller_frame.filename
-        path = os.path.dirname(os.path.abspath(caller_filename))
         path_before_file = os.path.dirname(file_path)
         file_name_only = os.path.basename(file_path)
         if os.path.isabs(path_before_file):
             dir_path = path_before_file
         else:
-            dir_path = path
+            dir_path = app_location_for_commons
 
         if is_parent: dir_path = os.path.dirname(dir_path)
         if sub_folder is not None: dir_path = os.path.join(dir_path, sub_folder)
@@ -32,13 +28,6 @@ def file_path_resolver(file_path: str, is_parent: bool = False, sub_folder: str 
     return file_path
 
 def os_f_read(file_name: str, is_parent: bool = False, sub_folder: str = None):
-    path_before_file = os.path.dirname(file_name)
-    if not os.path.isabs(path_before_file):
-        caller_frame = inspect.stack()[1]
-        caller_filename = caller_frame.filename
-        path = os.path.dirname(os.path.abspath(caller_filename))
-        file_name = os.path.join(path, file_name)
-
     file_path = file_path_resolver(file_name, is_parent=is_parent, sub_folder=sub_folder)
     with open(file_path, 'r') as file:
         if file_name.endswith('.yaml'):
@@ -46,13 +35,6 @@ def os_f_read(file_name: str, is_parent: bool = False, sub_folder: str = None):
         return file.read()
 
 def os_f_write(file_name: str, content: str, is_parent: bool = False, sub_folder: str = None):
-    path_before_file = os.path.dirname(file_name)
-    if not os.path.isabs(path_before_file):
-        caller_frame = inspect.stack()[1]
-        caller_filename = caller_frame.filename
-        path = os.path.dirname(os.path.abspath(caller_filename))
-        file_name = os.path.join(path, file_name)
-
     file_path = file_path_resolver(file_name, is_parent=is_parent, sub_folder=sub_folder)
     with open(file_path, 'w') as file:
         if file_name.endswith('.yaml'):
@@ -63,9 +45,7 @@ def os_f_write(file_name: str, content: str, is_parent: bool = False, sub_folder
 def logtofile(message, level: str = 'info', mode: str = 'a', path: str = None, file_name: str = 'logs.log'):
     # For mode 'a' to append and 'w' to overwrite the log file.
     if path is None:
-        caller_frame = inspect.stack()[1]
-        caller_filename = caller_frame.filename
-        path = os.path.dirname(os.path.abspath(caller_filename))
+        path = app_location_for_commons
     logfile_path = file_path_resolver(os.path.join(path, file_name))
     max_message_length = 1000 
     
@@ -114,5 +94,6 @@ if __name__ == "__main__":
     output_lang = 'lv'
     output_lang = map_lang(input = output_lang, to = 'ISO_639_2')
     print(output_lang)
+    print(app_location_for_commons)
     # logtofile(f"Mapped language code: {output_lang}", level='info')
     
