@@ -70,7 +70,9 @@ def logtofile(message, level: str = 'info', mode: str = 'a', path: str = None, f
 def map_lang(input: str, to: str = 'ISO_639_1'):
     # Map language name or code to the desired format (ISO_639_1, ISO_639_2 or name)
     try:
-        langs = os_f_read(file_name='languages.yaml', sub_folder='data')
+        this_location = os.path.dirname(os.path.abspath(__file__))
+        lang_path = os.path.join(this_location, 'data', 'languages.yaml')
+        langs = os_f_read(file_name=lang_path)
 
         if len(input) == 2:
             input_type = 'ISO_639_1'
