@@ -28,9 +28,7 @@ def file_path_resolver(file_path: str, is_parent: bool = False, sub_folder: str 
     return file_path
 
 def os_f_read(file_name: str, is_parent: bool = False, sub_folder: str = None):
-    logtofile("file_name")
     file_path = file_path_resolver(file_name, is_parent=is_parent, sub_folder=sub_folder)
-    logtofile(file_path)
     with open(file_path, 'r') as file:
         if file_name.endswith('.yaml'):
             return yaml.safe_load(file)
@@ -71,28 +69,24 @@ def logtofile(message, level: str = 'info', mode: str = 'a', path: str = None, f
 
 def map_lang(input: str, to: str = 'ISO_639_1'):
     # Map language name or code to the desired format (ISO_639_1, ISO_639_2 or name)
-    try:
-        this_location = os.path.dirname(os.path.abspath(__file__))
-        lang_path = os.path.join(this_location, 'data', 'languages.yaml')
-        langs = os_f_read(file_name=lang_path)
+    this_location = os.path.dirname(os.path.abspath(__file__))
+    lang_path = os.path.join(this_location, 'data', 'languages.yaml')
+    langs = os_f_read(file_name=lang_path)
 
-        if len(input) == 2:
-            input_type = 'ISO_639_1'
-        elif len(input) == 3:
-            input_type = 'ISO_639_2'
-        elif len(input) > 3:
-            input_type = 'name'
-        else:
-            logtofile(f"Input '{input}' is too short to be a valid language code.", level='warning')
-            return ''
-
-        for lang, codes in langs.items():
-            codes['name'] = lang
-            if input.lower() in codes.get(input_type, '').lower():
-                return codes.get(to, '')
-    except Exception as e:
-        logtofile(f"Error mapping language '{input}': {e}", level='error')
+    if len(input) == 2:
+        input_type = 'ISO_639_1'
+    elif len(input) == 3:
+        input_type = 'ISO_639_2'
+    elif len(input) > 3:
+        input_type = 'name'
+    else:
+        logtofile(f"Input '{input}' is too short to be a valid language code.", level='warning')
         return ''
+
+    for lang, codes in langs.items():
+        codes['name'] = lang
+        if input.lower() in codes.get(input_type, '').lower():
+            return codes.get(to, '')
 
 if __name__ == "__main__":
     output_lang = 'lv'
