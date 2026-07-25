@@ -28,7 +28,9 @@ def file_path_resolver(file_path: str, is_parent: bool = False, sub_folder: str 
     return file_path
 
 def os_f_read(file_name: str, is_parent: bool = False, sub_folder: str = None):
+    logtofile("file_name")
     file_path = file_path_resolver(file_name, is_parent=is_parent, sub_folder=sub_folder)
+    logtofile(file_path)
     with open(file_path, 'r') as file:
         if file_name.endswith('.yaml'):
             return yaml.safe_load(file)
