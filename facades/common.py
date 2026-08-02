@@ -80,7 +80,7 @@ def map_lang(input: str, to: str = 'ISO_639_1'):
     elif len(input) > 3:
         input_type = 'name'
     else:
-        logtofile(f"Input '{input}' is too short to be a valid language code.", level='warning')
+        logging.warning(f"Input '{input}' is too short to be a valid language code.")
         return ''
 
     for lang, codes in langs.items():

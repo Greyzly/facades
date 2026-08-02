@@ -1,7 +1,7 @@
 import requests
 import time
 import json
-from facades import logtofile as logtofile
+import logging
 
 def ask_gemini_with_fallback(prompt: str, api_key: str) -> str:
     """
@@ -94,22 +94,22 @@ def ask_gemini_with_fallback(prompt: str, api_key: str) -> str:
                         break # Successfully read the stream, break retry loop
                         
                     elif response.status_code in [429, 403]:
-                        logtofile(f"[{model}] Quota exceeded (429) or invalid API key (403).", level='warning')
+                        logging.warning(f"[{model}] Quota exceeded (429) or invalid API key (403).")
                         model_failed = True
                         break 
                         
                     elif response.status_code >= 500:
-                        logtofile(f"[{model}] Server error ({response.status_code}). Retrying {attempt + 1}/{max_retries}...", level='warning')
+                        logging.warning(f"[{model}] Server error ({response.status_code}). Retrying {attempt + 1}/{max_retries}...")
                         time.sleep(backoff_factor ** attempt)
                         continue
                         
                     else:
-                        logtofile(f"[{model}] Fatal error ({response.status_code}): {response.text}", level='error')
+                        logging.error(f"[{model}] Fatal error ({response.status_code}): {response.text}")
                         return None
                         
                 except requests.exceptions.RequestException as e:
                     # Network/Timeout Errors
-                    logtofile(f"[{model}] Network/Stream error: {e}. Retrying {attempt + 1}/{max_retries}...", level='warning')
+                    logging.warning(f"[{model}] Network/Stream error: {e}. Retrying {attempt + 1}/{max_retries}...")
                     time.sleep(backoff_factor ** attempt)
                     continue
             
@@ -122,7 +122,7 @@ def ask_gemini_with_fallback(prompt: str, api_key: str) -> str:
             # If the stream finished because it hit the token limit, trigger a continuation
             if finish_reason == "MAX_TOKENS" and continuation_count < max_continuations:
                 continuation_count += 1
-                logtofile(f"[{model}] Hit MAX_TOKENS limit. Requesting continuous flow chunk {continuation_count}...", level='info')
+                logging.info(f"[{model}] Hit MAX_TOKENS limit. Requesting continuous flow chunk {continuation_count}...")
                 
                 conversation_contents.append({"role": "model", "parts": [{"text": turn_text}]})
                 conversation_contents.append({
@@ -133,9 +133,9 @@ def ask_gemini_with_fallback(prompt: str, api_key: str) -> str:
             else:
                 return full_response
                 
-        logtofile(f"--- Exhausted options or switched from {model}, moving down the list. ---", level='info')
+        logging.info(f"--- Exhausted options or switched from {model}, moving down the list. ---")
 
-    logtofile("All available free models failed or exhausted their quota.", level='error')
+    logging.error("All available free models failed or exhausted their quota.")
     return full_response if full_response else None
 
 # --- Usage Example ---
