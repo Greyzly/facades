@@ -90,16 +90,27 @@ class LogInterceptor:
         """Emits captured output through internal_logger."""
         level = level_override if level_override is not None else self._infer_level(text)
         self.internal_logger.log(level, text, **self.logger_kwargs)
+        
+        # Flush file handlers so logs write to disk immediately
+        for h in self.handlers:
+            h.flush()
 
     def __call__(self, func):
         @wraps(func)
         def wrapper(*args, **kwargs):
-            # 1. Capture print() calls using internal stream
+            # 1. Capture print() calls
             stream = self._ContextStream(self._process_intercepted_text)
             
-            # 2. Intercept native logging calls using internal handler
+            # 2. Intercept native logging calls
             interceptor_handler = self._InterceptorHandler(self._process_intercepted_text)
+            
             root_logger = logging.getLogger()
+            
+            # Preserve original state so we leave no trace afterwards
+            original_level = root_logger.level
+            
+            # Set root logger level to DEBUG so logging.info() actually gets emitted
+            root_logger.setLevel(self.default_level)
             root_logger.addHandler(interceptor_handler)
             
             try:
@@ -107,5 +118,6 @@ class LogInterceptor:
                     return func(*args, **kwargs)
             finally:
                 root_logger.removeHandler(interceptor_handler)
+                root_logger.setLevel(original_level)  # Restore original level
 
         return wrapper
